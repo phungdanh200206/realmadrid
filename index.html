@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Marid</title>
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    
+    <!-- Icon -->
+    <script src="https://kit.fontawesome.com/fb989312d2.js" crossorigin="anonymous"></script>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css"/>
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="logo">
+                <img src="./logo.png" alt="Real Marid" width="auto" height="70px">
+            </div>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li>
+                        <a href="#home" class="active">Home</a>
+                    </li>
+                    <li>
+                        <a href="#history">History</a>
+                    </li>
+                    <li>
+                        <a href="#coach">Manager</a>
+                    </li>
+                    <li>
+                        <a href="#players">Players</a>
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <script>
+            hamburger = document.querySelector(".hamburger");
+            hamburger.onclick = function() {
+                navBar = document.querySelector(".nav");
+                navBar.classList.toggle("active");
+            }
+        </script>
+            <!-- image slider start -->
+        <div class="slider-body">
+            <section id="history">
+                <div class="slider">
+                    <div class="slides">
+                        <!-- radio buttons start -->
+                        <input type="radio" name="radio-btn" id="radio1">
+                        <input type="radio" name="radio-btn" id="radio2">
+                        <input type="radio" name="radio-btn" id="radio3">
+                        <input type="radio" name="radio-btn" id="radio4">
+                        <!-- radio buttons end -->
+                        <!-- slide image start -->
+                        <div class="slide first">
+                            <img src="./image/1.jpg" style="width: 100%" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="./image/2.jpg" style="width: 100%" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="./image/3.jpg" style="width: 100%" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="./image/4.jpg" style="width: 100%" alt="">
+                        </div>
+                        <!-- slide image end -->
+                        <!-- automatic navigation start -->
+                        <div class="navigation-auto">
+                            <div class="auto-btn1"></div>
+                            <div class="auto-btn2"></div>
+                            <div class="auto-btn3"></div>
+                            <div class="auto-btn4"></div>
+                        </div>
+                        <!-- automatic navigation end -->
+                        <!-- manual navigation start -->
+                        <div class="navigation-manual">
+                            <label for="radio1" class="manual-btn"></label>
+                            <label for="radio2" class="manual-btn"></label>
+                            <label for="radio3" class="manual-btn"></label>
+                            <label for="radio4" class="manual-btn"></label>
+                        </div>
+                        <!-- manual navigation end -->
+                    </div>
+                </div>
+            </section>
+            <script type="text/javascript" >
+            var counter = 1;
+            setInterval(function(){
+                document.getElementById('radio' + counter).checked = true;
+                counter++;
+                if(counter > 4 ){
+                    counter = 1;
+                }
+            }, 5000);
+            </script>
+        </div>
+    
+            <!-- image slider end -->
+        <div class="content">
+            <section id="coach">
+                <div class="about">
+                    <img src="image/coach.jpg" alt="">
+                    <div class="about-text">
+                        <h2>About Coach</h2>
+                        <h5>CARLO ANCELOTTI</h5>
+                        <p>Carlo Ancelotti is an Italian former footballer, the current head
+                        coach of Real Madrid and widely regarded as one of the most successful
+                        managers in the world. Ancelotti is known for flexibility in his formations,
+                        having opted to accommodate star players wherever possible despite a personal 
+                        preference for a 4-4-2 formation.</p>
+                        <button type="button" onclick="location.href='https://www.realmadrid.com/en/football/squad/carlo-ancelotti'"
+                        >View More</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div id="players">
+            <section>
+                <div class="swiper mySwiper container">
+                    <div class="swiper-wrapper content-card">
+                        
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <div class="image">
+                                    <img src="./image/card1.jpg" alt="">
+                                </div>
+
+                                <div class="media-icons">
+                                    <i class="fa-brands fa-facebook" onclick="location.href='https://www.facebook.com/kylianmbappeofficiel'"></i>
+                                    <i class="fa-brands fa-twitter" onclick="location.href='https://twitter.com/KMbappe'"></i>
+                                    <i class="fa-brands fa-instagram" onclick="location.href='https://www.instagram.com/k.mbappe/'"></i>
+                                </div>
+
+                                <div class="position">ST</div>
+
+                                <div class="name-player">
+                                    <span class="name">Kylian Mbappé</span>
+                                    <span class="name-position">Forward</span>
+                                </div>
+
+                                <div class="level">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+
+                                <div class="card-btn">
+                                    <button class="viewmore" onclick="location.href='https://vi.wikipedia.org/wiki/Kylian_Mbapp%C3%A9'">View More</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <div class="image">
+                                    <img src="./image/card2.jpg" alt="">
+                                </div>
+
+                                <div class="media-icons">
+                                    <i class="fa-brands fa-facebook" onclick="location.href='https://www.facebook.com/viniiciusjunior11'"></i>
+                                    <i class="fa-brands fa-twitter" onclick="location.href='https://twitter.com/vinijr'"></i>
+                                    <i class="fa-brands fa-instagram" onclick="location.href='https://www.instagram.com/vinijr/'"></i>
+                                </div>
+
+                                <div class="position">LW</div>
+
+                                <div class="name-player">
+                                    <span class="name">Vinícius Júnior</span>
+                                    <span class="name-position">Forward</span>
+                                </div>
+
+                                <div class="level">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+
+                                <div class="card-btn">
+                                    <button class="viewmore" onclick="location.href='https://vi.wikipedia.org/wiki/Vin%C3%ADcius_J%C3%BAnior'">View More</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <div class="image">
+                                    <img src="./image/card3.jpg" alt="">
+                                </div>
+
+                                <div class="media-icons">
+                                    <i class="fa-brands fa-facebook" onclick="location.href='https://www.facebook.com/rodrygogoes'"></i>
+                                    <i class="fa-brands fa-twitter" onclick="location.href='https://twitter.com/RodrygoGoes'"></i>
+                                    <i class="fa-brands fa-instagram" onclick="location.href='https://www.instagram.com/rodrygogoes/'"></i>
+                                </div>
+
+                                <div class="position">RW</div>
+
+                                <div class="name-player">
+                                    <span class="name">Rodrygo Goes</span>
+                                    <span class="name-position">Forward</span>
+                                </div>
+
+                                <div class="level">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+
+                                <div class="card-btn">
+                                    <button class="viewmore" onclick="location.href='https://vi.wikipedia.org/wiki/Rodrygo_Goes'">View More</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <div class="image">
+                                    <img src="./image/card4.jpg" alt="">
+                                </div>
+
+                                <div class="media-icons">
+                                    <i class="fa-brands fa-facebook" onclick="location.href='https://www.facebook.com/tonikroos'"></i>
+                                    <i class="fa-brands fa-twitter" onclick="location.href='https://twitter.com/ToniKroos'"></i>
+                                    <i class="fa-brands fa-instagram" onclick="location.href='https://www.instagram.com/toni.kr8s/'"></i>
+                                </div>
+
+                                <div class="position">CM</div>
+
+                                <div class="name-player">
+                                    <span class="name">Toni Kroos</span>
+                                    <span class="name-position">Midfielder</span>
+                                </div>
+
+                                <div class="level">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+
+                                <div class="card-btn">
+                                    <button class="viewmore" onclick="location.href='https://vi.wikipedia.org/wiki/Toni_Kroos'">View More</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <div class="image">
+                                    <img src="./image/card5.jpg" alt="">
+                                </div>
+
+                                <div class="media-icons">
+                                    <i class="fa-brands fa-facebook" onclick="location.href='https://www.facebook.com/ModricLuka10'"></i>
+                                    <i class="fa-brands fa-twitter" onclick="location.href='https://twitter.com/lukamodric10'"></i>
+                                    <i class="fa-brands fa-instagram" onclick="location.href='https://www.instagram.com/lukamodric10/'"></i>
+                                </div>
+
+                                <div class="position">CM</div>
+
+                                <div class="name-player">
+                                    <span class="name">Luka Modrić</span>
+                                    <span class="name-position">Midfielder</span>
+                                </div>
+
+                                <div class="level">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+
+                                <div class="card-btn">
+                                    <button class="viewmore" onclick="location.href='https://vi.wikipedia.org/wiki/Luka_Modri%C4%87'">View More</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <div class="image">
+                                    <img src="./image/card6.jpg" alt="">
+                                </div>
+
+                                <div class="media-icons">
+                                    <i class="fa-brands fa-facebook" onclick="location.href='https://www.facebook.com/JudeBellingham.FB'"></i>
+                                    <i class="fa-brands fa-twitter" onclick="location.href='https://twitter.com/BellinghamJude'"></i>
+                                    <i class="fa-brands fa-instagram" onclick="location.href='https://www.instagram.com/judebellingham/'"></i>
+                                </div>
+
+                                <div class="position">CM</div>
+
+                                <div class="name-player">
+                                    <span class="name">Jude Bellingham</span>
+                                    <span class="name-position">Midfielder</span>
+                                </div>
+
+                                <div class="level">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+
+                                <div class="card-btn">
+                                    <button class="viewmore" onclick="location.href='https://vi.wikipedia.org/wiki/Jude_Bellingham'">View More</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <div class="image">
+                                    <img src="./image/card7.jpg" alt="">
+                                </div>
+
+                                <div class="media-icons">
+                                    <i class="fa-brands fa-facebook" onclick="location.href='https://www.facebook.com/AurelienTchouameni8'"></i>
+                                    <i class="fa-brands fa-twitter" onclick="location.href='https://twitter.com/atchouameni'"></i>
+                                    <i class="fa-brands fa-instagram" onclick="location.href='https://www.instagram.com/aurelientchm/'"></i>
+                                </div>
+
+                                <div class="position">CDM</div>
+
+                                <div class="name-player">
+                                    <span class="name">Aurélien Tchouaméni</span>
+                                    <span class="name-position">Midfielder</span>
+                                </div>
+
+                                <div class="level">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+
+                                <div class="card-btn">
+                                    <button class="viewmore" onclick="location.href='https://vi.wikipedia.org/wiki/Aur%C3%A9lien_Tchouam%C3%A9ni'">View More</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <div class="image">
+                                    <img src="./image/card8.jpg" alt="">
+                                </div>
+
+                                <div class="media-icons">
+                                    <i class="fa-brands fa-facebook" onclick="location.href='https://www.facebook.com/MendyFerland'"></i>
+                                    <i class="fa-brands fa-twitter" onclick="location.href='https://twitter.com/ferland_mendy'"></i>
+                                    <i class="fa-brands fa-instagram" onclick="location.href='https://www.instagram.com/ferland_mendy/'"></i>
+                                </div>
+
+                                <div class="position">LB</div>
+
+                                <div class="name-player">
+                                    <span class="name">Ferland Mendy</span>
+                                    <span class="name-position">Defender</span>
+                                </div>
+
+                                <div class="level">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+
+                                <div class="card-btn">
+                                    <button class="viewmore" onclick="location.href='https://vi.wikipedia.org/wiki/Ferland_Mendy'">View More</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <div class="image">
+                                    <img src="./image/card9.jpg" alt="">
+                                </div>
+
+                                <div class="media-icons">
+                                    <i class="fa-brands fa-facebook" onclick="location.href='https://www.facebook.com/danicarvajaloficial'"></i>
+                                    <i class="fa-brands fa-twitter" onclick="location.href='https://twitter.com/DaniCarvajal92'"></i>
+                                    <i class="fa-brands fa-instagram" onclick="location.href='https://www.instagram.com/dani.carvajal.2/'"></i>
+                                </div>
+
+                                <div class="position">RB</div>
+
+                                <div class="name-player">
+                                    <span class="name">Dani Carvajal</span>
+                                    <span class="name-position">Defender</span>
+                                </div>
+
+                                <div class="level">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+
+                                <div class="card-btn">
+                                    <button class="viewmore" onclick="location.href='https://vi.wikipedia.org/wiki/Dani_Carvajal'">View More</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <div class="image">
+                                    <img src="./image/card10.jpg" alt="">
+                                </div>
+
+                                <div class="media-icons">
+                                    <i class="fa-brands fa-facebook" onclick="location.href='https://www.facebook.com/militao03'"></i>
+                                    <i class="fa-brands fa-twitter" onclick="location.href='https://twitter.com/edermilitao'"></i>
+                                    <i class="fa-brands fa-instagram" onclick="location.href='https://www.instagram.com/edermilitao/'"></i>
+                                </div>
+
+                                <div class="position">CB</div>
+
+                                <div class="name-player">
+                                    <span class="name">Éder Militão</span>
+                                    <span class="name-position">Defender</span>
+                                </div>
+
+                                <div class="level">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+
+                                <div class="card-btn">
+                                    <button class="viewmore" onclick="location.href='https://vi.wikipedia.org/wiki/%C3%89der_Milit%C3%A3o'">View More</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <div class="image">
+                                    <img src="./image/card11.jpg" alt="">
+                                </div>
+
+                                <div class="media-icons">
+                                    <i class="fa-brands fa-facebook" onclick="location.href='https://www.facebook.com/toni.ruediger'"></i>
+                                    <i class="fa-brands fa-twitter" onclick="location.href='https://twitter.com/ToniRuediger'"></i>
+                                    <i class="fa-brands fa-instagram" onclick="location.href='https://www.instagram.com/toniruediger/'"></i>
+                                </div>
+
+                                <div class="position">CB</div>
+
+                                <div class="name-player">
+                                    <span class="name">Antonio Rüdiger</span>
+                                    <span class="name-position">Defender</span>
+                                </div>
+
+                                <div class="level">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+
+                                <div class="card-btn">
+                                    <button class="viewmore" onclick="location.href='https://vi.wikipedia.org/wiki/Antonio_R%C3%BCdiger'">View More</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <div class="image">
+                                    <img src="./image/card12.jpg" alt="">
+                                </div>
+
+                                <div class="media-icons">
+                                    <i class="fa-brands fa-facebook" onclick="location.href='https://www.facebook.com/CourtoisOfficial'"></i>
+                                    <i class="fa-brands fa-twitter" onclick="location.href='https://twitter.com/thibautcourtois'"></i>
+                                    <i class="fa-brands fa-instagram" onclick="location.href='https://www.instagram.com/thibautcourtois/'"></i>
+                                </div>
+
+                                <div class="position">GK</div>
+
+                                <div class="name-player">
+                                    <span class="name">Thibaut Courtois</span>
+                                    <span class="name-position">Goalkeeper</span>
+                                </div>
+
+                                <div class="level">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+
+                                <div class="card-btn">
+                                    <button class="viewmore" onclick="location.href='https://vi.wikipedia.org/wiki/Thibaut_Courtois'">View More</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        <!-- <div class="swiper-button-next swiper-navBtn"></div>
+                        <div class="swiper-button-prev swiper-navBtn"></div> -->
+                        <div class="swiper-pagination"></div>
+                </div>
+            </section>
+        </div>        
+        
+        <div class="footer">
+
+        </div>
+    </div>
+</body>
+<!-- Swiper JS -->
+<script src="assets/js/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script src="./assets/js/script.js"></script>
+
+</html>
